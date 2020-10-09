@@ -30,10 +30,44 @@ body {
   font-family: 'Comfortaa', cursive;
 }
 
+#result {
+  padding: 10px;
+  text-align: center;
+}
+
+.score-title {
+  background-color: crimson;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+}
+
+#score {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
+.scorebox {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+
+.info-header {
+  text-align: center;
+}
+
 .two {
   background-color: crimson;
 }
 
 .four {
   background-color: coral;
+}
+
+@media (min-width:801px)  {
+  .grid-container {
+    margin-left: 25%;
+  }
 }

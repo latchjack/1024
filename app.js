@@ -213,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () => {
       resultDisplay.innerHTML = 'You Lose!'
       document.removeEventListener('keyup', control)
     }
-
   }
 
 })
