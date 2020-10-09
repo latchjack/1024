@@ -6,11 +6,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const width = 4
   let score = 0
 
+  const boxContents = document.getElementsByClassName('numBox')
+
+  if (boxContents.innerHTML == 2) {
+    boxContents.classList.add('two')
+  } else if (boxContents.innerHTML == 4) {
+    boxContents.classList.add('four')
+  }
+
   // create the board
   function createBoard() {
     for (let i = 0; i < width * width; i++) {
       square = document.createElement('div')
       square.innerHTML = 0
+      square.classList.add('numBox')
       gridDisplay.appendChild(square)
       squares.push(square)
     }
